@@ -1,0 +1,8 @@
+const $=(s,c=document)=>c.querySelector(s);const $$=(s,c=document)=>[...c.querySelectorAll(s)];
+const header=$('.header'),menu=$('.menu');menu.addEventListener('click',()=>{const open=header.classList.toggle('open');menu.setAttribute('aria-expanded',open)});$$('nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('open')));
+const wa=(text)=>window.open(`https://wa.me/917057055526?text=${encodeURIComponent(text)}`,'_blank','noopener');
+$('#quickSend').addEventListener('click',()=>{const j=$('#journey').value,t=$('#travellers').value,m=$('#month').value||'not decided';wa(`Assalamu Alaikum, I want to enquire about a ${j} journey for ${t}. Preferred month: ${m}. Please share current dates, inclusions and pricing.`)});
+$$('.packageEnquire').forEach(b=>b.addEventListener('click',()=>{const p=b.dataset.package;$('#interest').value=p;$('#contact').scrollIntoView({behavior:'smooth'});$('#message').value=`Please share the current dates, inclusions and pricing for the ${p}.`}));
+$('#contactForm').addEventListener('submit',e=>{e.preventDefault();const n=$('#name').value.trim(),p=$('#phone').value.trim(),i=$('#interest').value,c=$('#count').value,m=$('#message').value.trim()||'Please share more details.';wa(`Assalamu Alaikum, my name is ${n}.\nWhatsApp: ${p}\nInterested in: ${i}\nTravellers: ${c}\nMessage: ${m}`)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});$$('.reveal').forEach(el=>io.observe(el));
+$$('details').forEach(d=>d.addEventListener('toggle',()=>{if(d.open)$$('details').filter(x=>x!==d).forEach(x=>x.open=false)}));$('#year').textContent=new Date().getFullYear();
