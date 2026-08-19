@@ -11,7 +11,7 @@ Deploy the contents of this folder to GitHub Pages, Firebase Hosting, Netlify or
 ## Before final launch
 1. Confirm current package inclusions, dates and prices with the client.
 2. The supplied Arabia World Tours logo is installed in the header and footer.
-3. Journey cards use real editorial pilgrimage photography, including a real Indian Muslim family during Umrah. Confirm reuse permission or replace with client-owned group/trip photos before commercial launch. Do not use AI-generated people imagery.
+3. Journey cards use real room photography from hotels in Makkah and Madinah: an economy triple room, a premium Makkah room and a refined Madinah room. Confirm exact package/hotel allocation with the client before launch.
 4. Five verified official Instagram reels use direct embed frames so their thumbnails and play controls display inline. Their ranking by views is not claimed because public view-count verification is unavailable.
 4. Confirm office hours and any second phone number.
 5. Test every WhatsApp, phone, Instagram and map link on mobile.
